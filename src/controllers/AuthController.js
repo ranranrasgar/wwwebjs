@@ -30,7 +30,7 @@ exports.checkAuth = async (req, res) => {
       .then((data) => {
          console.log(data);
          if (!data) {
-           return res.status(400).send({
+           return res.send({
                success: false,
                message: "Disconnected",
             });
@@ -44,7 +44,7 @@ exports.checkAuth = async (req, res) => {
       })
       .catch((err) => {
          if (err) {
-            res.status(400).send({
+            res.send({
                success: false,
                message: "Disconnected",
             });

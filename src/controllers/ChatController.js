@@ -17,8 +17,8 @@ exports.sendMessage = async (req, res) => {
    try {
       const { data } = req.body;
     
-
-      console.log(data);
+      console.log("ISI DATA",data);
+      console.log("ISI BODY",req.body);
 
      
 
